@@ -27,8 +27,6 @@ puts "la monnaie la plus faible est #{new_hash.key(montant_float.min)}"
 
 #exercice 4
 
-
-
 montant6k = []
 montant_float.each do |v|
 	if v < 6000
@@ -42,7 +40,7 @@ print new_hash.key(c) + ", "
 end
 
 #exercice 5
-
+puts " "
 
 puts "Parmi les cryptomonnaies dont le cours est inférieur à 6K, le plus élevé est #{montant6k.max}. Il correspond à la crypto #{new_hash.key(montant6k.max)}"
 
