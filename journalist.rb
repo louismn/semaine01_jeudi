@@ -19,17 +19,17 @@ puts "Le nombre de journalistes commencant par une majuscule  est #{maj_journali
 
 	
 #exercice 5
-	maj_journalist = my_array.grep(/[A-Z]/).count 
-puts "Le nombre de journalistes contenant une majuscule dans son nom est #{maj_journalist}"
+maj_journaliste = my_array.grep(/[A-Z]/).count 
+puts "Le nombre de journalistes contenant une majuscule dans son nom est #{maj_journaliste}"
 
 	
 #exercice 6
-	maj_journalist = my_array.grep(/_/).count 
-puts "Le nombre de _ dans la liste est #{maj_journalist}"
-
+i = 0
+my_array.each {|item| i += item.count "_" }
+puts "Le nombre de _ dans la liste est #{i}"
 
 #exercice 7
- my_array.sort
-puts "La liste de journalistes dans l'ordre alphabetique est : "
-print my_array.sort
+order_journalist = my_array.sort_by {|x|x.downcase}
+puts "La liste de journalistes dans l'ordre alphabetique est  : "
+print order_journalist
 
